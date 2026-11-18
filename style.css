@@ -1,8 +1,14 @@
 body {
-    background-color: #232323;
     font-family: "Fjalla One", sans-serif;
     font-weight: 400;
     font-style: normal;
+    max-width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-image: url('wallpaper.png');
+    background-repeat: repeat;
+    background-size: 25%;
+    background-attachment: fixed;
 }
 
 .NavBtn {
@@ -63,10 +69,6 @@ body {
   --blue-dark: #1A2C60;
   --black: #000000;
   --grey: #979DAA;
-}
-
-body {
-  background: var(--black);
 }
 
 .games {
@@ -143,3 +145,163 @@ body {
   color: var(--grey);
 }
 
+
+.MainLogo {
+    width: 13vw;
+    border-radius: 100%;
+    position: relative;
+    left: 43%;
+    top: 2vh;
+}
+
+.MainHeaderLogo {
+    text-align: center;
+    color: white;
+    position: relative;
+    font-size: 6em;
+    letter-spacing: 1%;
+    font-weight: bolder;
+    top: -8vh;
+}
+
+.MainTextLogo {
+    text-align: center;
+    color: white;
+    position: relative;
+    font-size: 3em;
+    letter-spacing: 20%;
+    top: -18vh; 
+    font-weight: 100;
+}
+
+.MainSticker {
+    font-size: 1.2em;
+    position: relative;
+    background-color: white;
+    width: 35vw;
+    text-align: center;
+    height: 12vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    left: 32vw;
+    top: -20vh;
+    rotate: 2deg;
+    clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
+}
+
+.Logo-BM {
+    width: 10vw;
+    border-radius: 100%;
+    position: relative;
+    left: 44%;
+    top: 2vh;
+    border: #ffffff;
+    border-style: outset;
+}
+
+.FooterHeaderLogo {
+    text-align: center;
+    color: white;
+    position: relative;
+    font-size: 4em;
+    letter-spacing: 1%;
+    font-weight: bolder;
+    top: -5.5vh;
+}
+
+.FooterTextLogo {
+    text-align: center;
+    color: white;
+    position: relative;
+    font-size: 2em;
+    letter-spacing: 20%;
+    top: -11vh; 
+    font-weight: 100;
+}
+
+.FooterBtn {
+    transition-duration: 500ms;
+    color: #232323;
+    background-color: #ffffff;
+    width: 5vw;
+    margin: 1vw;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    font-weight: bold;
+}
+
+.FooterBtn:hover {
+    background-color: #1f3576;
+    color: white;
+    margin-top: 1.7vh;
+}
+
+.FooterBtn1 {
+    rotate: -3deg;
+}
+
+.FooterBtn2 {
+    rotate: 3deg;
+}
+
+.FooterBtn3 {
+    rotate: -3deg;
+}
+
+.FooterBtns {
+    top: -15vh;
+    left: 38.5%;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+}
+
+.FooterText {
+    text-align: center;
+    color: white;
+    position: relative;
+    font-size: 1em;
+    letter-spacing: 20%;
+    top: -11vh; 
+    font-weight: 100;
+}
+
+.CheckOut {
+    position: relative;
+    top: -10vh;
+    background-color: #414141;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+
+.CheckOutHeader {
+    text-align: center;
+    color: white;
+    position: relative;
+    font-size: 6em;
+    letter-spacing: 1%;
+    font-weight: bolder;
+    top: 5vh;
+}
+
+.CheckOutImg {
+    width: 50vw;
+    transition: 500ms;
+    position: relative;
+    left: 24%;
+    z-index: 1;
+    border-color: white;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.CheckOutImg:hover {
+    border-color: rgb(255, 228, 132);
+    border-width: 5px;
+    border-style: solid;
+}
