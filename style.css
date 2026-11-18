@@ -1,4 +1,58 @@
-.Logo-TL {
+body {
+    background-color: #232323;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.NavBtn {
+    transition-duration: 500ms;
+    color: #232323;
+    background-color: #ffffff;
     width: 5vw;
+    margin: 1vw;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    font-weight: bold;
+}
+
+.NavBtn:hover {
+    background-color: #1f3576;
+    color: white;
+    margin-top: 1.7vh;
+}
+
+.NavBtn1 {
+    rotate: -3deg;
+}
+
+.NavBtn2 {
+    rotate: 3deg;
+}
+
+.NavBtn3 {
+    rotate: -3deg;
+}
+
+.TopNav {
+    margin-top: 4vh;
+    position: sticky;
+    display: flex;
+    justify-content: right;
+}
+
+.NavBtns {
+    margin-right: 3vw;
+    display: flex;
+    flex-flow: row;
+}
+
+.Logo-TL {
+    width: 3.5vw;
     border-radius: 100%;
+    position: relative;
+    right: 68vw;
 }
