@@ -1,3 +1,7 @@
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: "Fjalla One", sans-serif;
     font-weight: 400;
@@ -377,8 +381,187 @@ body {
 }
 
 @media (max-width: 800px) {
+  body {
+    width: 100%;
+    margin: 0;
+  }
+
   .team-grid,
-  .about .game-info {
+  .game-info {
     grid-template-columns: 1fr;
+  }
+
+  .TopNav {
+    position: relative;
+    top: auto;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .Logo-TL {
+    position: static;
+    display: block;
+    width: clamp(40px, 9vw, 64px);
+  }
+
+  .NavBtns {
+    margin: 0;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .NavBtn,
+  .FooterBtn {
+    width: auto;
+    margin: 0;
+    padding: 0.65rem 0.85rem;
+    font-size: 0.95rem;
+  }
+
+  .NavBtn:hover,
+  .FooterBtn:hover {
+    margin-top: 0;
+  }
+
+  .MainLogo,
+  .Logo-BM {
+    position: static;
+    display: block;
+    width: clamp(84px, 20vw, 140px);
+    margin: 1.5rem auto;
+  }
+
+  .MainHeaderLogo,
+  .MainTextLogo,
+  .FooterHeaderLogo,
+  .FooterTextLogo,
+  .FooterText,
+  .CheckOutHeader {
+    position: static;
+    letter-spacing: normal;
+  }
+
+  .MainHeaderLogo,
+  .CheckOutHeader {
+    font-size: clamp(2.4rem, 9vw, 4rem);
+  }
+
+  .MainTextLogo {
+    margin: 0.5rem 0;
+    font-size: clamp(1.7rem, 6vw, 2.5rem);
+  }
+
+  .MainSticker {
+    position: static;
+    width: min(88%, 32rem);
+    height: auto;
+    min-height: 4rem;
+    margin: 1.5rem auto 3rem;
+    padding: 0.75rem 1.5rem;
+    box-sizing: border-box;
+  }
+
+  .MainSticker p {
+    margin: 0;
+  }
+
+  .CheckOut {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 2rem 1rem 3rem;
+  }
+
+  .CheckOutHeader {
+    margin: 0 0 1.5rem;
+  }
+
+  .CheckOutImg {
+    position: static;
+    display: block;
+    width: min(100%, 42rem);
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .Footer {
+    padding: 1rem 1rem 2rem;
+    text-align: center;
+  }
+
+  .FooterHeaderLogo {
+    margin: 0.5rem 0;
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  .FooterTextLogo {
+    margin: 0.5rem 0 1.5rem;
+    font-size: clamp(1.25rem, 5vw, 1.75rem);
+  }
+
+  .FooterBtns {
+    position: static;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .FooterText {
+    margin: 1.5rem 0 0;
+    font-size: 0.95rem;
+  }
+
+  .games,
+  .about {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .about {
+    margin-top: 0;
+  }
+
+  .game {
+    padding: 1.5rem 1rem 2rem;
+  }
+
+  .GameCover {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .TopNav {
+    align-items: flex-start;
+  }
+
+  .NavBtns {
+    gap: 0.25rem;
+  }
+
+  .NavBtn {
+    padding: 0.55rem 0.65rem;
+    font-size: 0.85rem;
+  }
+
+  .games,
+  .about {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .info-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .about-cta {
+    padding: 0.85rem 1.5rem;
   }
 }
