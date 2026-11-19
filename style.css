@@ -305,3 +305,80 @@ body {
     border-width: 5px;
     border-style: solid;
 }
+
+/* about me stukje sprunki en damian */
+
+
+
+.about {
+  max-width: 1100px;
+  margin: 8vh auto 0;
+  padding: 0 20px 22vh;
+  text-align: center;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.about .game {
+  margin-bottom: 32px;
+}
+
+.about-text {
+  max-width: 70ch;
+  margin: 0 auto 16px;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.about-link {
+  color: var(--blue-bright);
+  text-decoration: underline;
+}
+
+.about-link:hover {
+  color: #fff;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 16px;
+  border-radius: 100%;
+  border: 3px solid var(--blue-bright);
+  background: var(--blue-dark);
+  color: #fff;
+  font-size: 2rem;
+}
+
+.about-cta {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 14px 32px;
+  background: #fff;
+  color: #232323;
+  font-weight: bold;
+  text-decoration: none;
+  rotate: -3deg;
+  transition: 500ms;
+}
+
+.about-cta:hover {
+  background: #1f3576;
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .team-grid,
+  .about .game-info {
+    grid-template-columns: 1fr;
+  }
+}
